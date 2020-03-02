@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    //- #{Variablenname} ist ähnlich wie der ES6 Template String nur mit # anstatt $
+    title Natours | #{tour}
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='shortcut icon' type='image/png' href='img/favicon.png')
+
+  body
+    //- Variablenzuweisung mit = die Variable definieren wir in der render() Funktion in node
+    h1= tour
+    //- Wir können sogar Javascript anwenden!
+    h2= user.toUpperCase()
+    //- h1 The Park Camper
+    //- mit einem - davor können wir sogar Javascript Variablen definieren!
+    - const x = 9;
+    h2= 2 * x   
+    p This is just some text
+
