@@ -27,6 +27,7 @@ const bookingRouter = require('./routes/bookingRoutes');
 // server-side-rendering Routen
 const viewRouter = require('./routes/viewRoutes');
 
+// Start express app
 const app = express();
 
 // Einbinden der template Engine pug
